@@ -82,7 +82,9 @@ def logout():
     flash('You were logged out')
     return redirect(url_for('show_entries'))
 
-
+def run():
+    init_db()
+    app.run(host="0.0.0.0")
 if __name__ == '__main__':
     print "init sql"
     init_db()
