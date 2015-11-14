@@ -7,5 +7,6 @@
 
 import flaskr
 
+flaskr.app.debug=False
 flaskr.app.logger.setLevel("DEBUG")
 flaskr.run()
