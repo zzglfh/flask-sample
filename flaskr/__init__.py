@@ -22,6 +22,8 @@ PASSWORD = 'admin'
 app = Flask(__name__)
 app.config.from_object(__name__)
 
+
+
 #TODO read config from file
 #app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 
@@ -57,5 +59,6 @@ if __name__ == '__main__':
     print  "run"
     app.logger.setLevel("DEBUG")
     app.run()
+
 
 import flaskr.view
