@@ -3,8 +3,6 @@ MAINTAINER Zheng Guang "zhuzhengguang@gmail.com"
 
 WORKDIR /code
 
-RUN echo "Asia/Shanghai" > /etc/timezone && \
-        dpkg-reconfigure -f noninteractive tzdata 
 RUN pip install Flask
 ADD . /code
 
