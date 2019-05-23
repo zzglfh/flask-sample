@@ -9,7 +9,7 @@ pipeline {
 
       }
       steps {
-        sh 'docker build -t "flaskr" .'
+        sh 'echo "ok"'
       }
     }
   }
